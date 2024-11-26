@@ -33,7 +33,7 @@ readonly OPTION_7="
 "
 
 download () {
-  curl -I -# -O "$URL_PREFIX"/"$1" || err "
+  curl --remote-name -L -# "$URL_PREFIX"/"$1" || err "
 ERROR: $1 could not be downloaded. Please try again later.
 "
 }
