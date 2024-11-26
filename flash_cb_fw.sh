@@ -39,8 +39,6 @@ ERROR: $1 could not be downloaded. Please try again later.
 }
 
 rm_files () {
-  # bypass removal for troubleshooting
-  return
   rm -rf /tmp/flash.crbk.rom
 }
 
